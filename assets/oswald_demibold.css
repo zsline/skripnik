@@ -1,0 +1,9 @@
+@font-face {
+	font-family: 'Oswald DemiBold';
+	src: url('../fonts/oswald_demibold.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/oswald_demibold.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/oswald_demibold.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/oswald_demibold.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/oswald_demibold.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/oswald_demibold.svg#oswald_demibold') format('svg'); /* Chrome < 4, Legacy iOS */
+}

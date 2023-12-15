@@ -1,0 +1,331 @@
+/* ===== Fonts ===== */
+@font-face {
+    font-family: 'Segoe UI';
+    font-weight: 500;
+    src: url('../fonts/segoe_ui.eot');
+    /* IE 9 Compatibility Mode */
+    src: url('../fonts/segoe_ui.eot?#iefix') format('embedded-opentype'),
+        /* IE < 9 */
+        url('../fonts/segoe_ui.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/segoe_ui.woff') format('woff'),
+        /* Firefox >= 3.6, any other modern browser */
+        url('../fonts/segoe_ui.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/segoe_ui.svg#segoe_ui') format('svg');
+    /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+    font-family: 'Segoe UI';
+    font-weight: 700;
+    src: url('../fonts/segoe_ui_gras.eot');
+    /* IE 9 Compatibility Mode */
+    src: url('../fonts/segoe_ui_gras.eot?#iefix') format('embedded-opentype'),
+        /* IE < 9 */
+        url('../fonts/segoe_ui_gras.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/segoe_ui_gras.woff') format('woff'),
+        /* Firefox >= 3.6, any other modern browser */
+        url('../fonts/segoe_ui_gras.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/segoe_ui_gras.svg#segoe_ui_gras') format('svg');
+    /* Chrome < 4, Legacy iOS */
+}
+
+
+@font-face {
+    font-family: 'Segoe UI';
+    font-weight: 600;
+    src: url('../fonts/segoe_ui_semibold.eot');
+    /* IE 9 Compatibility Mode */
+    src: url('../fonts/segoe_ui_semibold.eot?#iefix') format('embedded-opentype'),
+        /* IE < 9 */
+        url('../fonts/segoe_ui_semibold.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/segoe_ui_semibold.woff') format('woff'),
+        /* Firefox >= 3.6, any other modern browser */
+        url('../fonts/segoe_ui_semibold.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/segoe_ui_semibold.svg#segoe_ui_semibold') format('svg');
+    /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+    font-family: 'Oswald';
+    font-weight: 700;
+    src: url('../fonts/oswald_bold.eot');
+    /* IE 9 Compatibility Mode */
+    src: url('../fonts/oswald_bold.eot?#iefix') format('embedded-opentype'),
+        /* IE < 9 */
+        url('../fonts/oswald_bold.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/oswald_bold.woff') format('woff'),
+        /* Firefox >= 3.6, any other modern browser */
+        url('../fonts/oswald_bold.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/oswald_bold.svg#oswald_bold') format('svg');
+    /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+    font-family: 'Oswald';
+    font-weight: 600;
+    src: url('../fonts/oswald_demibold.eot');
+    /* IE 9 Compatibility Mode */
+    src: url('../fonts/oswald_demibold.eot?#iefix') format('embedded-opentype'),
+        /* IE < 9 */
+        url('../fonts/oswald_demibold.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/oswald_demibold.woff') format('woff'),
+        /* Firefox >= 3.6, any other modern browser */
+        url('../fonts/oswald_demibold.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/oswald_demibold.svg#oswald_demibold') format('svg');
+    /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+    font-family: 'Oswald';
+    font-weight: 400;
+    src: url('../fonts/oswald_regular.eot');
+    /* IE 9 Compatibility Mode */
+    src: url('../fonts/oswald_regular.eot?#iefix') format('embedded-opentype'),
+        /* IE < 9 */
+        url('../fonts/oswald_regular.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/oswald_regular.woff') format('woff'),
+        /* Firefox >= 3.6, any other modern browser */
+        url('../fonts/oswald_regular.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/oswald_regular.svg#oswald_regular') format('svg');
+    /* Chrome < 4, Legacy iOS */
+}
+
+/* ===== Reset ===== */
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s;
+}
+
+a,
+button,
+input,
+textarea {
+    box-sizing: border-box;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+ul,
+li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+button {
+    display: block;
+    width: max-content;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+input,
+textarea {
+    background-color: transparent;
+    border: none;
+}
+
+/* ===== Root ===== */
+
+:root {
+    --bg-color: rgba(238, 240, 246, 1);
+    --main-color: #172238;
+    --black: #111E31;
+    --white: rgba(255, 255, 255, 1);
+    --transp: rgba(255, 255, 255, 0);
+    --transp-h: rgba(255, 255, 255, 0.1);
+    --bg: rgba(21, 32, 53, 0.9);
+    --stroke: #3D4B66;
+    --accent: rgba(164, 11, 11, 1);
+    --accent-h: rgba(164, 11, 11, 0.7);
+
+}
+
+
+/* ===== General ===== */
+body{
+    font-family: 'Segoe UI';
+    font-weight: 400;
+    color: var(--white);
+    background-color: var(--bg-color);
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Oswald';
+}
+h1{
+    font-size: 100px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+h1 span{
+    display: block;
+    font-size: 77px;
+}
+.flex-b-c {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.btn-fill{
+    max-height: 55px;
+    display: inline-block;
+    padding: 16px 64px;
+    border-radius: 5px;
+    font-weight: 600;
+    background-color: var(--accent);
+    transition: all 0.3s;
+}
+.btn-fill:hover{
+    background-color: var(--accent-h);
+}
+.btn-stroke{
+    max-height: 55px;
+    display: inline-block;
+    padding: 16px 47px;
+    border-radius: 5px;
+    border: 1px solid var(--white);
+    font-weight: 600;
+    background-color: var(--transp);
+    transition: all 0.3s;
+}
+.btn-stroke:hover{
+    background-color: var(--transp-h);
+}
+
+/* ===== Header ===== */
+
+header {
+    background: var(--main-color);
+    padding: 17px 0;
+    color: var(--white);
+    border-bottom: 1px solid var(--white);
+}
+
+.header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 14px;
+}
+
+.header img {
+    max-width: 130px;
+    height: auto;
+    object-fit: cover;
+}
+
+.header__contacts li{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    padding: 7px 10px;
+    border: 1px solid var(--stroke);
+    border-radius: 5px;
+    background: transparent;
+    transition: all 0.3s;
+}
+.header__contacts li:hover{
+    background: rgba(61, 75, 102, 0.5)
+}
+
+.header a:not(.header__logo){
+    position: relative;
+    opacity: 1;
+    padding-bottom: 5px;
+}
+.header a::before{
+    position: absolute;
+    content: '';
+    width: 0%;
+    height: 1px;
+    background: var(--white);
+    bottom: 0;
+    left: 0;
+    transition: all 0.5s;
+}
+.header a:hover::before{
+    opacity: 0.8;
+    width: 100%;
+}
+/* ===== Main ===== */
+
+.container {
+    max-width: 1190px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.main {
+    background: linear-gradient(0deg, rgba(21, 32, 53, 0.90) 0%, rgba(21, 32, 53, 0.90) 100%), url(../img/bg-main.jpg);
+    padding-top: 45px;
+}
+.main__wrapper{
+    align-items: center;
+}
+.main__offer {
+    max-width: 450px;
+}
+.main__offer p {
+    margin: 40px 0 45px;
+}
+.main__img{
+    position: relative;
+    max-width: 600px;
+    background-image: url(../img/oval.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom center;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.main__info{
+    position: absolute;
+    padding: 15px 15px 20px 15px;
+    max-width: 290px;
+    background-color: var(--white);
+    color: var(--black);
+    left: 40px;
+    bottom: 50px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+.main__info--title{
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+    padding-bottom: 8px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid var(--accent);
+}
+
