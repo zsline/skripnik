@@ -186,6 +186,22 @@ h1 span{
     display: block;
     font-size: 77px;
 }
+h2{
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+h4{
+    font-size: 26px;
+    text-transform: uppercase;
+}
+.container {
+    max-width: 1180px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
 .flex-b-c {
     display: flex;
     justify-content: space-between;
@@ -278,11 +294,7 @@ header {
 }
 /* ===== Main ===== */
 
-.container {
-    max-width: 1190px;
-    padding: 0 15px;
-    margin: 0 auto;
-}
+
 
 .main {
     background: linear-gradient(0deg, rgba(21, 32, 53, 0.90) 0%, rgba(21, 32, 53, 0.90) 100%), url(../img/bg-main.jpg);
@@ -329,3 +341,33 @@ header {
     border-bottom: 1px solid var(--accent);
 }
 
+
+.ivents{
+    padding: 130px 0;
+}
+
+.ivents H2{
+    color: var(--black);
+    margin-bottom: 70px;
+}
+.ivents__item{
+border-radius: 10px;
+overflow: hidden;
+border-radius: 10px;
+background: linear-gradient(180deg, #152035 51.8%, rgba(21, 32, 53, 0.00) 96.46%);
+
+}
+.ivents__item--info{
+    padding: 40px 45px 0;
+    text-align: center;
+}
+.ivents__item--info p {
+    margin: 20px 0 26px;
+}
+.ivents__item img{
+    position: relative;
+    width: 100%;
+    max-height: 245px;
+    object-fit: cover;
+    z-index: -1;
+}
