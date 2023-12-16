@@ -409,12 +409,16 @@ background: linear-gradient(180deg, #152035 51.8%, rgba(21, 32, 53, 0.00) 96.46%
 .partners__img::after{
     content: '';
     position: absolute;
-    background: linear-gradient(0deg, rgba(17, 30, 49, 0.40) 0%, rgba(17, 30, 49, 0.40) 100%);
+    background: linear-gradient(0deg, rgba(17, 30, 49, 0.4) 0%, rgba(17, 30, 49, 0.40) 100%);
     top: 0;
     bottom: 0;
     right: 0;
     left: 0;
     z-index: 100;
+    transition: all 0.4s;
+}
+.partners__row:hover > .partners__img::after {
+    bottom: 100%;
 }
 .partners__info{
     display: flex;
