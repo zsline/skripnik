@@ -128,7 +128,9 @@ textarea {
     font-family: inherit;
     font-size: inherit;
 }
-
+a:hover{
+    color: inherit;
+}
 ul,
 li {
     list-style: none;
@@ -197,6 +199,11 @@ h4{
     font-size: 26px;
     text-transform: uppercase;
     font-weight: 500;
+}
+h5{
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 400;
 }
 .container {
     max-width: 1180px;
@@ -501,4 +508,75 @@ background: linear-gradient(180deg, #152035 51.8%, rgba(21, 32, 53, 0.00) 96.46%
     border-radius: 50%;
     background-color: var(--accent);
     padding: 15px;
+}
+
+/* ===== Docs ===== */
+.docs{
+    background: linear-gradient(0deg, rgba(21, 32, 53, 0.90) 0%, rgba(21, 32, 53, 0.90) 100%), url(../img/bg-main.jpg);
+    padding: 130px 0;
+}
+.docs h2{
+    margin-bottom: 60px;
+}
+.docs__download--item, .docs__video--item{
+    text-align: center;
+    border: 1px solid var(--white);
+    border-radius: 10px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.0);
+    transition: all 0.4s;
+}
+.docs__download--item h5, .docs__video--item h5{
+    padding: 0 25px;
+}
+.docs__download--item:hover, .docs__video--item:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+
+}
+.docs__video{
+    margin-top: 35px;
+}
+.docs__download--item{
+    padding-bottom: 30px;
+}
+.docs__download--item img{
+    margin-bottom: 10px;
+}
+.docs__video--item{
+    padding: 30px;
+}
+.docs__video--img{
+    position: relative;
+    display: inline-block;
+    width: 270px;
+    height: 150px;
+    flex: 0 0;
+    margin-bottom: 23px;
+}
+.docs__video--img::before{
+    position: absolute;
+    content:'';
+    background-image: url('../img/icons/play.svg');
+    width: 92px;
+    height: 62px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+}
+
+.docs__video--img::after{
+    content: '';
+    position: absolute;
+    background: linear-gradient(0deg, rgba(17, 30, 49, 0.4) 0%, rgba(17, 30, 49, 0.40) 100%);
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
+    transition: all 0.4s;
 }
