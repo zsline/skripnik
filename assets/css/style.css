@@ -194,7 +194,11 @@ h2{
     text-transform: uppercase;
     font-weight: 600;
 }
-
+h3{
+    font-size: 20px;
+    font-family: 'Segoe UI';
+    font-weight: 600;
+}
 h4{
     font-size: 26px;
     text-transform: uppercase;
@@ -489,7 +493,7 @@ background: linear-gradient(180deg, #152035 51.8%, rgba(21, 32, 53, 0.00) 96.46%
     position: absolute;
     content:'';
     background-image: url('../img/icons/play.svg');
-    width: 92px;
+    width: 90px;
     height: 62px;
     top: 50%;
     left: 50%;
@@ -561,7 +565,7 @@ background: linear-gradient(180deg, #152035 51.8%, rgba(21, 32, 53, 0.00) 96.46%
     position: absolute;
     content:'';
     background-image: url('../img/icons/play.svg');
-    width: 92px;
+    width: 90px;
     height: 62px;
     top: 50%;
     left: 50%;
@@ -586,4 +590,37 @@ background: linear-gradient(180deg, #152035 51.8%, rgba(21, 32, 53, 0.00) 96.46%
 .news{
     padding: 120px 0;
     color: var(--black);
+}
+.news h2{
+    margin-bottom: 70px;
+}
+
+.news__slider--item{
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid var(--black);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.news__slider--item:not(:nth-last-child(1)){
+    margin-right: 20px;
+}
+.news__slider--info{
+    padding: 30px;
+}
+.news__slider--info a{
+    color: var(--accent);
+    letter-spacing: 1px;
+    transition: all 0.3s;
+}
+.news__slider--info a:hover{
+    letter-spacing: 2px;
+}
+.news__btns{
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 140px;
 }
