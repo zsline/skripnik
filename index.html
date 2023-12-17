@@ -15,7 +15,12 @@
     <header class="header">
         <div class="container">
             <nav class="header__nav flex-b-c">
-                <a href="#" class="header__logo"><img src="assets/img/logo.png" alt=""></a>
+                <a href="#" class="header__logo">
+                    <picture>
+                        <source	media="(max-width: 600px)" srcset="assets/img/favicon.png" width = "40"; >
+                        <img src="assets/img/logo.png" alt="" srcset="opera-closeup-2x.jpg 2x, opera-closeup-3x.jpg 3x">
+                    </picture>
+                </a>
                 <ul class="header__menu">
                     <li><a href="#">Главная</a></li>
                     <li><a href="#">Актуальное</a></li>
@@ -38,7 +43,7 @@
     <section class="main">
         <div class="container">
             <div class="row main__wrapper">
-                <div class="col-lg-6">
+                <div class="col-lg-6  col-md-12">
                     <div class="main__offer">
                         <h1>Михаил<span>Скрипник</span></h1>
                         <p>Получите эксклюзивные знания на бизнес-тренингах и онлайн курсах от совладельца трех
@@ -50,7 +55,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 col-md-12">
                     <div class="main__img">
                         <img src="assets/img/persone.png" alt="">
                         <div class="main__info">
@@ -66,7 +71,7 @@
     <section class="ivents">
         <div class="container">
             <h2>Актуальные события</h2>
-            <div class="row">
+            <div class="row g-3">
                 <div class="col-lg-4 col-md-6">
                     <div class="ivents__item">
                         <div class="ivents__item--info">
@@ -146,7 +151,7 @@
                 </div>
             </div>
             <div class="row partners__expert g-5">
-                <div class="col-sm-6 partners__expert--info mr-2">
+                <div class="col-lg-6 col-md-7 partners__expert--info">
                     <div class="partners__expert--decor">
                         <img src="assets/img/decor.svg" alt="">
                     </div>
@@ -177,7 +182,7 @@
                             лидерстве.</p>
                     </div>
                 </div>
-                <div class="col-sm-6 partners__expert--img">
+                <div class="col-lg-6 col-md-5 partners__expert--img">
                     <img src="assets/img/persone-2.jpg" alt="">
                 </div>
             </div>
@@ -224,33 +229,33 @@
     <section class="docs">
         <div class="container">
             <h2>ПОЛЕЗНЫЕ МАТЕРИАЛЫ</h2>
-            <div class="row docs__download">
-                <div class="col-md-3">
+            <div class="row g-4 docs__download">
+                <div class="col-lg-3 col-sm-6">
                     <a href="#" class="docs__download--item">
                         <img src="assets/img/doc-1.png" alt="">
                         <h5>Кодекс (правила успешности)</h5>
                     </a>
                 </div>
-                <div class="col-md-3">
+                <div class="col-lg-3 col-sm-6">
                     <a href="#" class="docs__download--item">
                         <img src="assets/img/doc-2.png" alt="">
                         <h5>Шаблон для планирования</h5>
                     </a>
                 </div>
-                <div class="col-md-3">
+                <div class="col-lg-3 col-sm-6">
                     <a href="#" class="docs__download--item">
                         <img src="assets/img/doc-3.png" alt="">
                         <h5>Лайфхаки по продажам</h5>
                     </a>
                 </div>
-                <div class="col-md-3">
+                <div class="col-lg-3 col-sm-6">
                     <a href="#" class="docs__download--item">
                         <img src="assets/img/doc-4.png" alt="">
                         <h5>Чек-лист «составить аватар клиента»</h5>
                     </a>
                 </div>
             </div>
-            <div class="row docs__video">
+            <div class="row g-4 docs__video">
                 <div class="col-md-6">
                     <a href="#" class="docs__video--item">
                         <div class="docs__video--img">
@@ -319,8 +324,8 @@
     <footer class="footer">
         <div class="container">
             <h2>КОНТАКТЫ</h2>
-            <div class="row">
-                <div class="col-md-6">
+            <div class="row g-4">
+                <div class="col-lg-6 col-md-12">
                     <div class="footer__contact">
                         <div class="footer__contact--item">
                             <img src="assets/img/icons/phone.svg" alt="">
@@ -360,7 +365,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-lg-6 col-md-12">
                     <div class="footer__form">
                         <div class="footer__form--title">
                             Мы расскажем вам подробно обо всех возможностях и условиях
@@ -376,15 +381,15 @@
                 </div>
             </div>
             <div class="row footer__links">
-                <div class="col-md-4 footer__links--logo">
+                <div class="col-lg-4 col-md-12 footer__links--logo">
                     <img src="assets/img/logo.png" alt="">
                     <div class="footer__links--copy">
                         © все права защищены
                     </div>
                 </div>
-                <div class="col-md-8">
-                    <div class="row">
-                        <div class="col-md-2 offset-1">
+                <div class="col-lg-8 col-md-12">
+                    <div class="row g-5">
+                        <div class="col-md-2 offset-md-1 col-xs-3 offset-xs-0 order-md-1 order-xs-2">
                             <ul>
                                 <li><a href="#">Главная</a></li>
                                 <li><a href="#">Актуальное</a></li>
@@ -395,7 +400,7 @@
                                 <li><a href="#">Контакты</a></li>
                             </ul>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-3 col-xs-8 order-md-2 order-xs-3">
                             <ul>
                                 <li><a href="#">Курс «Life Management» </a></li>
                                 <li><a href="#">Тренинг «Чемпион продаж» </a></li>
@@ -406,7 +411,7 @@
                                 <li><a href="#">Полезные материалы</a></li>
                             </ul>
                         </div>
-                        <div class="col-md-5 offset-1">
+                        <div class="col-md-5 offset-md-0 order-md-3 order-xs-1">
                             <a href="#">Политика конфиденциальности</a>
                             <a href="#">Разработчик сайта</a>
                             <a href="#">Smart-sales.kz@mail.ru</a>
