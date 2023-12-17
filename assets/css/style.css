@@ -203,7 +203,7 @@ h3{
 h4{
     font-size: 26px;
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: 400;
 }
 h5{
     font-size: 24px;
@@ -266,6 +266,24 @@ h5{
 }
 .btn-stroke:hover{
     background-color: var(--transp-h);
+}
+
+.main__title{
+    font-family: 'Oswald';
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 120%;
+    text-transform: uppercase;
+    text-align: center;
+}
+.main__text{
+    font-size: 30px;
+    line-height: 130%;
+    text-align: center;
+    margin-top: 40px;
+}
+section{
+    padding: 120px 0;
 }
 @media (max-width:780px) {
     .btn-fill{
@@ -374,6 +392,7 @@ header {
 .main {
     background: linear-gradient(0deg, rgba(21, 32, 53, 0.90) 0%, rgba(21, 32, 53, 0.90) 100%), url(../img/bg-main.jpg);
     padding-top: 45px;
+    padding-bottom: 0;
 }
 .main__wrapper{
     align-items: center;
@@ -880,4 +899,101 @@ margin-top: 20px;
     .footer__links--copy{
         font-size: 8px;
     }
+}
+
+/*===Taxi===*/
+
+.main-taxi{
+    background: linear-gradient(0deg, rgba(21, 32, 53, 0.70) 0%, rgba(21, 32, 53, 0.70) 100%), url(../img/taxi-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+    padding: 177px 260px;
+}
+.main-taxi__title{
+    font-family: 'Oswald';
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 120%;
+    text-transform: uppercase;
+    text-align: center;
+}
+.main-taxi__text{
+    font-size: 30px;
+    line-height: 130%;
+    text-align: center;
+    margin-top: 40px;
+}
+.cars{
+    color: var(--black);
+}
+.cars h2{
+    margin-bottom: 60px;
+}
+.cars__item{
+    text-align: center;
+    padding: 40px;
+    background-color: var(--black);
+    border-radius: 10px;
+    color: var(--white);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.cars__item h4{
+    margin-bottom: 44px;
+}
+.cars__item p{
+    font-size: 20px;
+    line-height: 130%;
+}
+.cars .btn-fill{
+    padding: 16px 27px;
+    margin-top: 23px;
+    color: var(--white);
+}
+.cars__comfort{
+    margin-bottom: 120px;
+}
+.cars__invest--item{
+    position: relative;
+    color: var(--white);
+    padding: 60px 40px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.cars__invest--item::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: linear-gradient(180deg, rgba(21, 32, 53, 0.7) 60%, rgba(21, 32, 53, 0.7) 100%);
+}
+.cars__invest--item h4,
+.cars__invest--item p,
+.cars__invest--item a{
+    position: relative;
+    z-index: 20;
+}
+.cars__invest--item p{
+    font-size: 20px;
+    margin-top: 17px;
+}
+/*===Farm===*/
+
+.main-farm{
+    background: linear-gradient(0deg, rgba(21, 32, 53, 0.70) 0%, rgba(21, 32, 53, 0.70) 100%), url(../img/farm-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+    padding: 177px 260px;
 }
