@@ -182,13 +182,13 @@ h1, h2, h3, h4, h5, h6{
     font-family: 'Oswald';
 }
 h1{
-    font-size: 100px;
+    font-size: clamp(36px, 8.6vw, 100px);
     text-transform: uppercase;
     font-weight: 600;
 }
 h1 span{
     display: block;
-    font-size: 77px;
+    font-size: clamp(36px, 8.6vw, 77px);
 }
 h2{
     font-size: clamp(25px, 5.2vw, 50px) ;
@@ -215,11 +215,11 @@ h5{
     font-weight: 400;
 }
 @media (max-width:960px) {
-    h1, h1 span{
-        font-size: 70px;
-        display: inline-block;
+    h1{
+        margin-top: 70px;
     }
     h1 span{
+        display: inline-block;
         margin-left: 20px;
     }
     h4 {
@@ -446,15 +446,15 @@ header {
         max-width: 100%;
     }
     .main__offer p{
-        max-width: 494px;
+        max-width: 90%;
         margin: 0 auto;
     }
     .main__img{
-        max-width: 450px;
+        max-width: 70vw;
         margin: 20px auto 200px;
     }
     .main__img img{
-        max-width: 325px;
+        max-width: 40vw;
     }
     .main__info{
         left: 50%;
@@ -904,8 +904,6 @@ margin-top: 20px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    min-height: 500px;
-    padding: 177px 0;
 }
 .main-taxi__title{
     font-family: 'Oswald';
@@ -991,8 +989,6 @@ margin-top: 20px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    min-height: 500px;
-    padding: 177px 0;
 }
 
 .farm{
@@ -1102,30 +1098,43 @@ margin-top: 20px;
     align-items: center;
     min-height: 700px;
 }
+.main-farm,
+.main-taxi,
+.main
+{
+padding: 0;
+}
+.main{
+    min-width: 700px;
+}
 @media (max-width: 960px) {
-    .main-farm>.container,
-    .main-taxi>.container
+    .main-farm,
+    .main-taxi,
+    .main
     {
         min-height: 650px;
     }
 }
 @media (max-width: 640px) {
-    .main-farm>.container,
-    .main-taxi>.container
+    .main-farm,
+    .main-taxi,
+    .main
     {
         min-height: 700px;
     }
 }
 @media (max-width: 480px) {
-    .main-farm>.container,
-    .main-taxi>.container
+    .main-farm,
+    .main-taxi,
+    .main
     {
         min-height: 500px;
     }
 }
 @media (max-width: 340px) {
-    .main-farm>.container,
-    .main-taxi>.container
+    .main-farm,
+    .main-taxi,
+    .main
     {
         min-height: 650px;
     }
