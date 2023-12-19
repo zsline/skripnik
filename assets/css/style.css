@@ -1019,7 +1019,14 @@ margin-top: 20px;
     font-weight: 600;
 }
 
+.garden,
+.livestock{
+    padding: 0;
+}
+.garden{
+    padding: 0 0 clamp(70px, 6.2vw, 120px);
 
+}
 .garden__item--img{
     position: relative;
     border-radius: 10px;
