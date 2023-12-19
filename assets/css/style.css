@@ -214,6 +214,10 @@ h5{
     text-transform: uppercase;
     font-weight: 400;
 }
+p{
+    margin: 0;
+    padding: 0;
+}
 @media (max-width:960px) {
     h1{
         margin-top: 70px;
@@ -287,7 +291,9 @@ h5{
     margin-top: 40px;
 }
 section{
-    padding: 120px 0 0;
+    padding:0;
+    padding: clamp(70px, 6.2vw, 120px) 0;
+
 }
 @media (max-width:780px) {
     .btn-fill{
@@ -399,8 +405,11 @@ header {
     padding-bottom: 0;
 }
 .main__wrapper{
+    display: flex;
+    justify-content: space-between;
     align-items: center;
 }
+
 .main__offer {
     max-width: 450px;
 }
@@ -417,6 +426,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: end;
+    flex: 1 1;
 }
 .main__info{
     position: absolute;
@@ -438,23 +448,25 @@ header {
     margin-bottom: 10px;
     border-bottom: 1px solid var(--accent);
 }
+
 @media (max-width:990px) {
     .main__wrapper{
         text-align: center;
+        flex-direction: column;
     }
     .main__offer{
         max-width: 100%;
     }
     .main__offer p{
         max-width: 90%;
-        margin: 0 auto;
+        margin: 20px auto;
     }
     .main__img{
-        max-width: 70vw;
-        margin: 20px auto 200px;
+        width: 70%;
+        margin: 20px 0 200px;
     }
     .main__img img{
-        max-width: 40vw;
+        max-width: 50vw;
     }
     .main__info{
         left: 50%;
@@ -473,10 +485,6 @@ header {
     }
 }
 /* ===== Ivents ===== */
-.ivents{
-    padding: 120px 0;
-}
-
 .ivents H2{
     color: var(--black);
 }
@@ -515,7 +523,7 @@ margin-top: 20px;
 
 .partners{
     background: linear-gradient(0deg, rgba(21, 32, 53, 0.90) 0%, rgba(21, 32, 53, 0.90) 100%), url(../img/bg-main.jpg);
-    padding: 120px 0;
+
 }
 
 .partners__row{
@@ -611,8 +619,8 @@ margin-top: 20px;
 /* ===== Testimonial ===== */
 
 .testimonial{
-    padding: 120px 0;
     color: var(--black);
+
 }
 .testimonial__slider{
     overflow: hidden;
@@ -655,7 +663,6 @@ margin-top: 20px;
 /* ===== Docs ===== */
 .docs{
     background: linear-gradient(0deg, rgba(21, 32, 53, 0.90) 0%, rgba(21, 32, 53, 0.90) 100%), url(../img/bg-main.jpg);
-    padding: 120px 0;
 }
 
 .docs__download--item, .docs__video--item{
@@ -724,7 +731,6 @@ margin-top: 20px;
 /* ===== News ===== */
 
 .news{
-    padding: 120px 0;
     color: var(--black);
 }
 
@@ -1104,9 +1110,7 @@ margin-top: 20px;
 {
 padding: 0;
 }
-.main{
-    min-width: 700px;
-}
+
 @media (max-width: 960px) {
     .main-farm,
     .main-taxi,
