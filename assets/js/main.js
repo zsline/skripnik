@@ -18,6 +18,11 @@ const swiper1 = new Swiper('.testimonial__slider', {
     close.classList.add('close-menu__open');
     body.style="overflow: hidden";
   });
+  menu.addEventListener('click', function () {
+    menu.classList.remove('open-menu');
+    close.classList.remove('close-menu__open');
+    body.style="overflow: auto";
+  });
   close.addEventListener('click', function () {
     menu.classList.remove('open-menu');
     close.classList.remove('close-menu__open');
