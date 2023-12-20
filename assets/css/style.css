@@ -408,7 +408,7 @@ header {
     opacity: 0.8;
     width: 100%;
 } 
-.header a:hover::before{
+.header a:not(.header__logo):hover::before{
     opacity: 0.8;
     width: 100%;
 }
