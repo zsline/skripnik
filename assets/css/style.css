@@ -306,6 +306,9 @@ section{
     width: 5px;
     height: 5px;
     background-image: url(../img/icons/submenu.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     right: 0;
     top: 50%;
     transform: translateY(-50%);
