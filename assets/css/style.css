@@ -1657,3 +1657,19 @@ object-fit: contain;
     max-width: 594px;
     margin: 20px auto;
 }
+
+/* Result Ivent Page ===================================================*/
+
+.result__item{
+    background: linear-gradient(0deg, rgba(21, 32, 53, 0.90) 0%, rgba(21, 32, 53, 0.90) 100%), url(../img/bg-main.jpg);
+    background-size: 10%;
+    border-radius: 10px;
+    padding: 14px 20px 20px;
+    color: var(--white);
+}
+.result__item--title{
+    font-size: clamp(14px, 1.55vw, 18px);
+    font-weight: 600;
+    line-height: 23.4px;
+    margin: 20px 0;
+}
