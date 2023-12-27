@@ -1743,3 +1743,122 @@ object-fit: contain;
     margin-top: 80px;
     margin-left: 80px;
 }
+
+/* Programm Ivent Page ===================================================*/
+
+.programm__cat{
+    font-family: 'HeliosCond';
+    font-size: clamp(10px, 1.6vw, 20px);
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 20px 10px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+.programm__modules{
+    margin-top: 60px;
+}
+.programm__modules--item{
+    position: relative;
+    padding: 32px 80px 45px;
+    background-color: var(--white);
+    border-radius: 10px;
+    color: var(--black);
+    font-weight: 700;
+    min-height: 363px;
+}
+.programm__modules--desc{
+    position: relative;
+    margin-bottom: 20px;
+}
+.programm__modules--desc::after{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: '';
+    height: 1px;
+    width: 80%;
+    background: linear-gradient(90deg, var(--black) -6.7%, rgba(255, 255, 255, 0.00) 123.69%);
+}
+.programm__modules--practic{
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+.programm__modules--practic::after{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: '';
+    height: 1px;
+    width: 80%;
+    background: linear-gradient(90deg, var(--black) -6.7%, rgba(255, 255, 255, 0.00) 123.69%);
+}
+.programm__modules--item{
+    position: relative;
+    overflow: hidden;
+}
+
+.programm__modules--item ul li{
+    position: relative;
+    padding-left: 12px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.programm__modules--item ul li::before{
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background-color: var(--black);
+    left: 0;
+    top: 50%;
+    transform: translateY(-45%);
+}
+.programm__modules--materials span{
+    color: var(--accent);
+    margin-bottom: 10px;
+}
+.programm__modules--item .programm__modules--materials ul li{
+    padding-left: 18px;
+}
+.programm__modules--item .programm__modules--materials ul li::before{
+    content: '';
+    position: absolute;
+    background-image: url(../img/icons/check.png);
+    background-color: transparent;
+    width: 14px;
+    height: 14px;
+    left: 0;
+    right: 50%;
+    transform: translateY(-50%);
+}
+.programm__modules--img{
+    position: absolute;
+    height: 170px;
+    right: 10px;
+    
+}
+.programm__modules--img img{
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+}
+.programm__modules--count{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: var(--accent);
+    color: var(--white);
+    font-family: 'HeliosCond';
+    font-size: 60px;
+    border-radius: 50%;
+    padding-right: 15px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    top: 15px;
+    left: -50px;
+}
