@@ -1439,7 +1439,17 @@ ul.header__menu.open-menu li {
     letter-spacing: 0.72px;
     transition: all 0.3s;
 }
-
+.ivent-btn-tr{
+    display: inline-block;
+    width: max-content;
+    padding: 14px 21px;
+    border-radius: 10px;
+    background-image: url(../img/bg-ivent-btn.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    backdrop-filter: blur(5px);
+}
 .grad-btn:hover {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.40) 100%), linear-gradient(90deg, #800 3.46%, #F00 51.32%, #800 97.09%);
 }
@@ -1454,6 +1464,11 @@ ul.header__menu.open-menu li {
 }
 .page-ivent h1 span {
     margin: 0;
+}
+.page-ivent h2{
+    font-family: 'HeliosCond';
+    font-size: clamp(30px, 5.2vw, 60px);
+    font-weight: 700;
 }
 .page-ivent h4{
     font-family: 'HeliosCond';
@@ -1672,4 +1687,59 @@ object-fit: contain;
     font-weight: 600;
     line-height: 23.4px;
     margin: 20px 0;
+}
+
+/* Ivent-About Ivent Page ===================================================*/
+.ivent-about{
+    position: relative;
+    background: linear-gradient(95deg, #0B1628 44.47%, #000 96.63%);
+}
+.ivent-about h2{
+    margin-bottom: 20px;
+}
+.ivent-about__title{
+    position: relative;
+    display: inline-block;
+    font-size: clamp(14px, 2.07vw, 24px);
+    margin-bottom: 10px;
+}
+.ivent-about__title::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: '';
+    height: 1px;
+    width: 100%;
+    background: linear-gradient(90deg, #FFF -6.7%, rgba(255, 255, 255, 0.00) 123.69%);
+}
+.ivent-about__subtitle{
+    margin-bottom: 40px;
+}
+.ivent-about__text p{
+    margin-bottom: 20px;
+}
+.ivent-about__img{
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+
+.ivent-about__count--item{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-left: 20px;
+}
+.ivent-about__count--title{
+    font-family: 'HeliosCond';
+    font-size: clamp(30px, 4.31vw, 50px);
+    font-weight: 700;
+}
+.ivent-about__count--text{
+    margin-left: 5px;
+    max-width: 120px;
+}
+.ivent-about .ivent-btn-tr{
+    margin-top: 80px;
+    margin-left: 80px;
 }
