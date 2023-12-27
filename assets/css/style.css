@@ -101,7 +101,49 @@
         url('../fonts/oswald_regular.svg#oswald_regular') format('svg');
     /* Chrome < 4, Legacy iOS */
 }
+@font-face {
+    font-family: 'HeliosCond';
+    src: url('../fonts/HeliosCond-Bold.eot');
+    src: local('../fonts/HeliosCond Bold'), local('HeliosCond-Bold'),
+        url('../fonts/HeliosCond-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/HeliosCond-Bold.woff') format('woff'),
+        url('../fonts/HeliosCond-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
 
+@font-face {
+    font-family: 'HeliosCond';
+    src: url('../fonts/HeliosCond-Bold-Italic.eot');
+    src: local('../fonts/HeliosCond Bold Italic'), local('HeliosCond-Bold-Italic'),
+        url('../fonts/HeliosCond-Bold-Italic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/HeliosCond-Bold-Italic.woff') format('woff'),
+        url('../fonts/HeliosCond-Bold-Italic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'HeliosCond';
+    src: url('../fonts/HeliosCond-Italic.eot');
+    src: local('HeliosCond Italic'), local('HeliosCond-Italic'),
+        url('../fonts/HeliosCond-Italic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/HeliosCond-Italic.woff') format('woff'),
+        url('../fonts/HeliosCond-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'HeliosCond';
+    src: url('../fonts/HeliosCond.eot');
+    src: local('../fonts/HeliosCond Regular'), local('HeliosCond'),
+        url('../fonts/HeliosCond.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/HeliosCond.woff') format('woff'),
+        url('../fonts/HeliosCond.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 /* ===== Reset ===== */
 * {
     box-sizing: border-box;
@@ -256,6 +298,7 @@ p {
     padding: 0 10px;
     margin: 0 auto;
     position: relative;
+    z-index: 100;
 }
 
 .flex-b-c {
@@ -1380,27 +1423,49 @@ ul.header__menu.open-menu li {
 
 
 /* Ivent Page ===================================================*/
+
+/* General Ivent Page ===================================================*/
 .grad-btn {
     display: inline-block;
     border-radius: 10px;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), linear-gradient(90deg, #800 3.46%, #F00 51.32%, #800 97.09%);
-    padding: 25px 97px;
+    padding: clamp(20px, 2.1vw, 24px) clamp(60px, 8.3vw, 97px);
     text-transform: uppercase;
     color: var(--white);
-    font-size: 24px;
+    font-size: clamp(14px, 2.1vw, 24px);
     font-style: normal;
     font-weight: 700;
     line-height: 120%;
     letter-spacing: 0.72px;
     transition: all 0.3s;
 }
+
 .grad-btn:hover {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.40) 100%), linear-gradient(90deg, #800 3.46%, #F00 51.32%, #800 97.09%);
 }
 
-/* Header ===========================================*/
 
-.header-ivent{
+.page-ivent h1{
+    font-family: 'HeliosCond';
+    font-size: clamp(30px, 5.2vw, 60px);
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 120%;
+}
+.page-ivent h1 span {
+    margin: 0;
+}
+.page-ivent h4{
+    font-family: 'HeliosCond';
+    font-size: 30px;
+    font-weight: 700;
+}
+.dark{
+    background-color: var(--black);
+}
+/* Header Ivent Page ===================================================*/
+
+.header-ivent {
     position: absolute;
     width: 100%;
     padding: 20px 0;
@@ -1409,16 +1474,44 @@ ul.header__menu.open-menu li {
     left: 0;
     z-index: 999;
 }
-.logo-ivent{
+
+.logo-ivent {
     display: block;
     width: 70px;
     height: 70px;
 }
-.logo-ivent img{
+
+.logo-ivent img {
     width: 100%;
     height: auto;
     object-fit: cover;
 }
+
+.header-ivent__nav,
+.header-ivent__nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.header-ivent__nav ul li {
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.header-ivent__nav ul li::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: '';
+    height: 1px;
+    width: 100%;
+    background: linear-gradient(90deg, #FFF -6.7%, rgba(255, 255, 255, 0.00) 123.69%);
+}
+
+
+/* Main-ivent Ivent Page ===================================================*/
 
 .main-ivent {
     position: relative;
@@ -1429,25 +1522,23 @@ ul.header__menu.open-menu li {
     background-position: center;
     z-index: 2;
 }
-
+.main-ivent__offer{
+    width: 50%;
+}
 .main-ivent__title {
     position: relative;
-    font-family: 'Oswald';
-    font-size: 60px;
-    text-transform: uppercase;
-    font-weight: 600;
-    line-height: 120%;
     max-width: 580px;
     margin-bottom: 40px;
 }
 
 .main-ivent__title span {
     display: block;
+    font-size: clamp(36px, 6vw, 70px);
     color: var(--accent);
 }
 
 .main-ivent__subtitle {
-    font-size: 24px;
+    font-size: clamp(14px, 2.1vw, 24px);
     font-style: normal;
     font-weight: 400;
     line-height: 130%;
@@ -1461,28 +1552,31 @@ ul.header__menu.open-menu li {
     right: 40px;
 }
 
-.main-ivent__img{
+.main-ivent__img {
     position: absolute;
     right: 0;
     left: 45%;
     bottom: 0;
     top: 0;
-    z-index: -1;
+    z-index: 200;
 
 }
-.main-ivent__img--box{
+
+.main-ivent__img--box {
     position: relative;
     height: 100%;
     width: 100%;
 }
-.main-ivent__img--box .main-persone{
+
+.main-ivent__img--box .main-persone {
     position: absolute;
     height: 90%;
     width: auto;
     bottom: 0;
     object-fit: cover;
 }
-.main-ivent__img--box .light-persone{
+
+.main-ivent__img--box .light-persone {
     position: absolute;
     height: 80%;
     width: auto;
@@ -1490,7 +1584,8 @@ ul.header__menu.open-menu li {
     left: 15%;
     object-fit: cover;
 }
-.main-ivent__img--box .shadow-persone{
+
+.main-ivent__img--box .shadow-persone {
     position: absolute;
     width: auto;
     bottom: 0;
@@ -1499,4 +1594,66 @@ ul.header__menu.open-menu li {
     left: 0;
     object-fit: cover;
     opacity: 0.6;
+}
+.main-ivent__img--box .main-ivent__img--insta {
+    position: absolute;
+    border-radius: 10px;
+    padding: 10px 15px;
+    background-image: url(../img/Rectangle\ 1570.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    backdrop-filter: blur(5px);
+    top: 228px;
+    right: 300px;
+}
+
+/* Reason Ivent Page ===================================================*/
+
+.reason{
+    padding-bottom: 0;
+}
+.reason__item{
+    padding: 13px 20px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 130%;
+    color: var(--black);
+    background: var(--white);
+    border-radius: 10px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+}
+
+.reason__img {
+    width: 30%;
+    transform: translate(50px,-100px);
+}
+.reason__img img{
+width: 548px;
+height: auto;
+object-fit: contain;
+}
+
+/* Garant Ivent Page ===================================================*/
+
+.garant{
+    text-align: center;
+    padding-top: 0;
+
+}
+.garant__wrapper{
+    background-image: url(../img/money-bg-ivent.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    padding: 40px;
+    font-size: 18px;
+}
+.garant__wrapper p{
+    max-width: 594px;
+    margin: 20px auto;
 }
