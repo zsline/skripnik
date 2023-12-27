@@ -1862,3 +1862,27 @@ object-fit: contain;
     top: 15px;
     left: -50px;
 }
+
+/* How Ivent Page ===================================================*/
+
+.how__item{
+    position: relative;
+    background-color: var(--white);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    color: var(--black);
+    font-weight: 600;
+    min-height: 160px;
+}
+.how__decor{
+    position: absolute;
+    height: 40px;
+    top: 0;
+    right: 30px;
+}
+.how__decor img{
+    height: 100%;
+}
