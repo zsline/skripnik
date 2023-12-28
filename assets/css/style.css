@@ -1989,7 +1989,68 @@ color: var(--accent);
 }
 
 
+/* Testy Dark Ivent Page ==================================*/
+.testy__dark--slider{
+    position: relative;
+    margin-top: 80px;
+    z-index: 2;
+}
+.testy__dark--slider > .testimonial__btns{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+}
+.testy__dark--slider > .swiper-wrapper{
+    width: 80%;
+    margin: 0 auto;
+}
+.testy__slide{
+    background-color: var(--white);
+    color: var(--black);
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+    /* margin: 0 80px; */
+}
+.testy__slide--info{
+    padding: 40px 16px 30px 40px;
+    width: 70%;
+}
+.testy__slide--link{
+    color: var(--accent);
+    cursor: pointer;
+    margin-top: 10px;
+}
+.testy__slide--title{
+    margin-top: 50px;
+    margin-bottom: 10px;
+    font-family: 'Oswald';
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.testy__slide--desc{
+    font-family: 'Oswald';
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    opacity: 0.5;
+}
 
+.testy__slide--img{
+    /* height: 100%; */
+    width: 30%;
+    flex: 1 0;
+}
+.testy__slide--img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
 /* Accordeon  ===========================================*/
 
