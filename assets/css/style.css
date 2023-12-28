@@ -1817,9 +1817,14 @@ object-fit: contain;
     top: 50%;
     transform: translateY(-45%);
 }
+.programm__modules--practic{
+    margin-top: 10px;
+}
 .programm__modules--materials span{
+    display: block;
     color: var(--accent);
     margin-bottom: 10px;
+
 }
 .programm__modules--item .programm__modules--materials ul li{
     padding-left: 18px;
@@ -1885,4 +1890,100 @@ object-fit: contain;
 }
 .how__decor img{
     height: 100%;
+}
+
+/* Price Ivent Page ===================================================*/
+
+.price__item{
+    text-align: center;
+    padding: 40px 24px;
+    font-size: 14px;
+    border-radius: 10px;
+    color: var(--black);
+}
+.price__light{
+    background-color: #ececec;
+}
+.price__bisenes{
+    background-color: #fff;
+}
+.price__full{
+    background-color: #1F2C49;
+    color: var(--white);
+}
+.price__light h4,
+.price__bisenes h4,
+.price__full h4{
+    margin-bottom: 16px;
+}
+.price__item ul{
+    position: relative;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.price__item ul::after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    height: 1px;
+    width: 100%;
+    background: linear-gradient(90deg, var(--black) -6.7%, rgba(255, 255, 255, 0.00) 123.69%);
+}
+.price__item ul li{
+    position: relative;
+    padding: 8px 0;
+}
+.price__item ul li::after{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: '';
+    height: 1px;
+    width: 100%;
+    background: linear-gradient(90deg, var(--black) -6.7%, rgba(255, 255, 255, 0.00) 123.69%);
+}
+.price__full ul::after,
+.price__full ul li::after{
+    background: linear-gradient(90deg, var(--white) -6.7%, rgba(255, 255, 255, 0.00) 123.69%);
+}
+
+.price__light h4,
+.price__bisenes h4
+{
+color: var(--accent);
+}
+.price__online{
+    font-weight: 600;
+}
+.price__item ul.price__plus::after,
+.price__item ul.price__plus li::after{
+    width: 0;
+} 
+.price__item ul.price__plus li{
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    font-weight: 600;
+    padding: 0;
+    margin-bottom: 10px;
+}
+.price__item--price{
+    background-color: var(--black);
+    color: var(--white);
+    border-radius: 10px;
+    font-family: 'HeliosCond';
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 42px;
+    padding: 12px;
+}
+.price__item--price + .grad-btn{
+    padding: 25px 10px;
+    width: 100%;
+    margin-top: 20px;
+}
+.price__item--price + .grad-btn:hover{
+    color: var(--white);
 }
