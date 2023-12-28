@@ -12,8 +12,8 @@ const swiper1 = new Swiper('.testimonial__slider', {
   const open = document.querySelector('.menu');
   const close = document.querySelector('.close-menu');
   const body = document.querySelector('body');
-
-  open.addEventListener('click', function () {
+if(open){
+    open.addEventListener('click', function () {
     menu.classList.add('open-menu');
     close.classList.add('close-menu__open');
     body.style="overflow: hidden";
@@ -28,3 +28,6 @@ const swiper1 = new Swiper('.testimonial__slider', {
     close.classList.remove('close-menu__open');
     body.style="overflow: auto";
   });
+}
+
+new Accordion('.accordion-container');

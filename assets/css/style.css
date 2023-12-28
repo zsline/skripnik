@@ -1987,3 +1987,69 @@ color: var(--accent);
 .price__item--price + .grad-btn:hover{
     color: var(--white);
 }
+
+
+
+
+/* Accordeon  ===========================================*/
+
+.question .grad-btn{
+    width: max-content;
+    display: block;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.ac{
+    background-color: transparent;
+    border: none;
+    color: var(--white);
+    padding: 27px 0;
+    margin: 0;
+    border-bottom: 1px solid var(--white);
+}
+.ac:nth-child(1){
+    border-top: 1px solid var(--white);
+}
+
+.ac .ac-trigger,
+.ac .ac-trigger:focus{
+    color: var(--white);
+    font-family: 'Segoe UI';
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 23,4px;
+}
+
+.ac .ac-panel .ac-text{
+    display: block;
+    color: var(--white);
+    padding-left: 20px;
+}
+
+.ac .ac-trigger::after{
+    content: '';
+    width: 40px;
+    height: 40px;
+    background-image: url(../img/icons/quest-plus.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--accent);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ac.is-active>.ac-header .ac-trigger::after{
+    content: '';
+    width: 40px;
+    height: 40px;
+    background-image: url(../img/icons/quest-open.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--accent);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
