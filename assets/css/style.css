@@ -214,7 +214,9 @@ textarea {
 
 }
 
-
+*{
+    /* outline: 1px solid var(--black); */
+}
 /* ===== General ===== */
 body {
     font-family: 'Segoe UI';
@@ -360,7 +362,6 @@ p {
 }
 
 section {
-    padding: 0;
     padding: clamp(70px, 6.2vw, 120px) 0;
 
 }
@@ -1529,6 +1530,7 @@ ul.header__menu.open-menu li {
 /* Main-ivent Ivent Page ===================================================*/
 
 .main-ivent {
+    overflow: hidden;
     position: relative;
     padding: 180px 0 140px;
     min-height: 767px;
@@ -1894,6 +1896,9 @@ object-fit: contain;
 
 /* Price Ivent Page ===================================================*/
 
+.price{
+    padding-bottom: 0;
+}
 .price__item{
     text-align: center;
     padding: 40px 24px;
@@ -1990,10 +1995,17 @@ color: var(--accent);
 
 
 /* Testy Dark Ivent Page ==================================*/
+
+.testy-dark{
+    padding-bottom: 0;
+}
 .testy__dark--slider{
     position: relative;
     margin-top: 80px;
     z-index: 2;
+    max-width: 1180px;
+    padding: 0 10px;
+    margin: 80px auto 0;
 }
 .testy__dark--slider > .testimonial__btns{
     position: absolute;
@@ -2052,6 +2064,89 @@ color: var(--accent);
     object-fit: cover;
 }
 
+
+.modal-app{
+    display: flex;
+    display: none;
+    position: fixed;
+    background-color: var(--main-color);
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+.modal-app__content{
+    position: relative;
+    max-width: 600px;
+    background-color: var(--white);
+    border-radius: 10px;
+    padding: 40px;
+}
+.modal-close{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+
+.footer-ivent{
+    padding-bottom: 50px;
+}
+
+.footer-ivent__contacts{
+    position: relative;
+    border-radius: 10px; 
+    background-repeat: no-repeat;
+    background-size:50% 100%;
+    background-position: right;
+    overflow: hidden;
+    color: var(--black);
+}
+.footer-ivent__bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, #FFF 49.9%, rgba(255, 255, 255, 0.00) 66.9%);
+    background-size: cover;
+}
+.footer-ivent__contacts--info{
+    position: relative;
+    padding: 48px 57px;
+}
+.footer-ivent__contacts--info li{
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 600;
+}
+.footer-ivent__contacts--info img{
+    margin-right: 20px;
+}
+
+.footer-ivent__address{
+    margin-top: 50px;
+}
+.footer-ivent__address--legal{
+    font-family: 'Oswald';
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 50px;
+    line-height: 150%;
+}
+.footer-ivent__address--legal a{
+    text-decoration: underline;
+}
+.footer-ivent__copy{
+    font-size: 10px;
+    margin-top: 10px;
+    opacity: 0.7;
+}
 /* Accordeon  ===========================================*/
 
 .question .grad-btn{
@@ -2114,3 +2209,4 @@ color: var(--accent);
     align-items: center;
     justify-content: center;
 }
+
