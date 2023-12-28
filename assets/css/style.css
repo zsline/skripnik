@@ -214,7 +214,7 @@ textarea {
 
 }
 
-*{
+* {
     /* outline: 1px solid var(--black); */
 }
 /* ===== General ===== */
@@ -223,6 +223,7 @@ body {
     font-weight: 400;
     color: var(--white);
     background-color: var(--bg-color);
+    overflow-x: hidden;
 }
 
 h1,
@@ -277,6 +278,7 @@ h5 {
 p {
     margin: 0;
     padding: 0;
+    font-size: clamp(9px, 2.2vw, 16px);
 }
 
 @media (max-width:960px) {
@@ -1659,7 +1661,7 @@ section.main-ivent{
 }
 @media (max-width:830px) {
     .main-ivent{
-        overflow: visible;
+        /* overflow: visible; */
     }
     .main-ivent .container{
         flex-direction: column;
@@ -1833,6 +1835,7 @@ object-fit: contain;
 
 /* Ivent-About Ivent Page ===================================================*/
 .ivent-about{
+    overflow: hidden;
     position: relative;
     background: linear-gradient(95deg, #0B1628 44.47%, #000 96.63%);
 }
