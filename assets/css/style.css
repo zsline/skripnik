@@ -278,7 +278,7 @@ h5 {
 p {
     margin: 0;
     padding: 0;
-    font-size: clamp(9px, 2.2vw, 16px);
+    font-size: clamp(9px, 1.8vw, 16px);
 }
 
 @media (max-width:960px) {
@@ -1445,13 +1445,15 @@ ul.header__menu.open-menu li {
 .ivent-btn-tr{
     display: inline-block;
     width: max-content;
-    padding: 14px 21px;
+    padding: 14px clamp(9px, 1.2vw, 20px);
     border-radius: 10px;
     background-image: url(../img/bg-ivent-btn.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
     backdrop-filter: blur(5px);
+    font-size: clamp(9px, 2.2vw, 16px);
+
 }
 .grad-btn:hover {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.40) 100%), linear-gradient(90deg, #800 3.46%, #F00 51.32%, #800 97.09%);
@@ -1473,6 +1475,11 @@ ul.header__menu.open-menu li {
     font-size: clamp(30px, 5.2vw, 60px);
     font-weight: 700;
 }
+@media (max-width:490px) {
+    .page-ivent h2{
+        text-align: center;
+    }
+}
 .page-ivent h4{
     font-family: 'HeliosCond';
     font-size: 30px;
@@ -1481,6 +1488,8 @@ ul.header__menu.open-menu li {
 .dark{
     background-color: var(--black);
 }
+
+
 /* Header Ivent Page ===================================================*/
 
 .header-ivent {
@@ -1660,9 +1669,7 @@ section.main-ivent{
     
 }
 @media (max-width:830px) {
-    .main-ivent{
-        /* overflow: visible; */
-    }
+
     .main-ivent .container{
         flex-direction: column;
     }
@@ -1806,7 +1813,7 @@ object-fit: contain;
 .garant__wrapper{
     background-image: url(../img/money-bg-ivent.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
     background-position: center;
     border-radius: 10px;
     padding: 40px;
@@ -1816,7 +1823,20 @@ object-fit: contain;
     max-width: 594px;
     margin: 20px auto;
 }
-
+@media (max-width:762px) {
+    .garant__wrapper h4{
+        font-size: 20px;
+    }
+    .garant__wrapper p,
+    .garant__wrapper i{
+        font-size: 10px;
+    }
+}
+@media (max-width:480px) {
+    .garant{
+        display: none;
+    }
+}
 /* Result Ivent Page ===================================================*/
 
 .result__item{
@@ -1863,6 +1883,9 @@ object-fit: contain;
 .ivent-about__text p{
     margin-bottom: 20px;
 }
+.ivent-about__img-mobil{
+    display: none;
+}
 .ivent-about__img{
     position: absolute;
     top: 0;
@@ -1882,13 +1905,123 @@ object-fit: contain;
 }
 .ivent-about__count--text{
     margin-left: 5px;
-    max-width: 120px;
 }
 .ivent-about .ivent-btn-tr{
-    margin-top: 80px;
-    margin-left: 80px;
+    margin-top: 100px;
 }
-
+.ivent-about__count{
+    margin-left: 60%;
+}
+@media (max-width:1200px) {
+    .ivent-about__img{
+        left: 40%;
+    }
+}
+@media (max-width:992px) {
+    .ivent-about__img{
+        left: 40%;
+    }
+    .ivent-about__count{
+        margin-top: 30px;
+        margin-left: 0;
+    }
+    .ivent-about__img{
+        width: 670px;
+        left: 50%;
+    }
+    .ivent-about__img img{
+        width: 100%;
+    }
+    .ivent-about__counts{
+         margin-left: 0;
+         display: flex;
+         flex-direction: column-reverse;
+    }
+    .ivent-about .ivent-btn-tr {
+        margin-left: 20px;
+        margin-top: 345px;
+    }
+    
+}
+@media (max-width:768px) {
+    .ivent-about .ivent-btn-tr {
+        margin-left: 0px;
+        margin-top: 345px;
+    }
+    .ivent-about__count--text{
+        max-width: 100%;
+        line-height: 130%;
+    }
+}
+@media (max-width:660px) {
+    .ivent-about__wrapper{
+        flex-direction: column-reverse;
+    }
+    .ivent-about__item{
+        width: 100%;
+    }
+    .ivent-about__title{
+        font-size: 18px;
+    }
+    .ivent-about__text{
+        font-size: 12px;
+    }
+    .ivent-about__counts{
+        flex-direction: row;
+    }
+    .ivent-about__count--item{
+        margin-left: 0;
+    }
+    .ivent-about .ivent-btn-tr{
+        margin: 270px auto 0;
+    }
+    .ivent-about__img {
+        left: 44%;
+        width: 540px;
+    }
+}
+@media (max-width:490px) {
+    .ivent-about__img-desctop{
+        display: none;
+    }
+    .ivent-about__img-mobil{
+        display: block;
+        bottom: 0;
+        top: 390px;
+        left: 0;
+        width: 420px;
+    }
+    .ivent-about__wrapper{
+        flex-direction: column;
+    }
+    .ivent-about__counts{
+        flex-direction: column-reverse;
+        margin-bottom: 30px;
+    }
+    .ivent-about .ivent-btn-tr {
+        margin-top: 40px;
+        margin-bottom: 120px;
+        padding: 4px 10px;
+        font-size: 9px;
+        background-image: url(../img/button-mobil.png);
+    }
+    .ivent-about{
+        text-align: center;
+    }
+    .ivent-about__count--item{
+        margin-right: auto;
+    }
+    .ivent-about__count{
+        margin-left: auto;
+    }
+    .ivent-about__count--title{
+        font-size: 30px;
+    }
+    .ivent-about__count--text{
+        font-size: 8px;
+        text-align: left;
+    }
+}
 /* Programm Ivent Page ===================================================*/
 .programm{
     padding-bottom: 0;
@@ -2253,6 +2386,62 @@ color: var(--accent);
     right: 20px;
     cursor: pointer;
 }
+
+@media (max-width:640px) {
+    .testy-modals{
+        padding-top: 30px;
+        margin: 0;
+    }
+    .testy__dark--slider{
+        margin: 0;
+        padding-bottom: 100px;
+
+    }
+    .testy__dark--slider .swiper-wrapper{
+        width: 100%;
+    }
+    .testy__dark--visible{
+        display: block;
+        position: relative;
+    }
+    .testy__slide--info{
+        width: 100%;
+        padding: 20px;
+    }
+    .testy__slide--img{
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        width: 80px;
+        height: 80px;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    .testy__slide--name{
+        margin-left: 100px;
+    }
+    .testy__slide--title{
+        font-size: 12px;
+        margin-bottom: 4px;
+        margin-top: 70px;
+    }
+    .testy__slide--desc{
+        font-size: 8px;
+    }
+    .testy__slide--link{
+        font-size: 10px;
+    }
+    .testy__dark--slider > .testimonial__btns{
+        bottom: 0;
+        top: auto;
+        transform: translateY(0);
+        justify-content: center;
+    }
+}
+
+/* Testy ================================================*/
+
+
 
 
 .footer-ivent{
