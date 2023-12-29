@@ -1482,7 +1482,7 @@ ul.header__menu.open-menu li {
 }
 .page-ivent h4{
     font-family: 'HeliosCond';
-    font-size: 30px;
+    font-size: clamp(18px, 2.6vw, 30px);
     font-weight: 700;
 }
 .dark{
@@ -2123,7 +2123,7 @@ object-fit: contain;
 }
 .programm__modules--img{
     position: absolute;
-    height: 170px;
+    height: clamp(100px, 16vw,170px);
     right: 10px;
     
 }
@@ -2160,6 +2160,7 @@ object-fit: contain;
     justify-content: start;
     align-items: center;
     color: var(--black);
+    font-size: clamp(12px, 2vw, 16px);
     font-weight: 600;
     min-height: 160px;
 }
@@ -2439,10 +2440,7 @@ color: var(--accent);
     }
 }
 
-/* Testy ================================================*/
-
-
-
+/* Footer Ivent ================================================*/
 
 .footer-ivent{
     padding-bottom: 50px;
@@ -2508,6 +2506,38 @@ color: var(--accent);
     margin-top: 10px;
     opacity: 0.7;
 }
+@media (max-width: 640px) {
+    .footer-ivent__contacts--info li a img{
+        width: 30px;
+    }
+    .footer-ivent__contacts--info li a{
+        font-size: 16px;
+    }
+    .footer-ivent__bg{
+        background: linear-gradient(90deg, #FFF 65%, rgba(255, 255, 255, 0.00) 80%);
+    }
+    .footer-ivent__address{
+        text-align: center;
+    }
+    .footer-ivent__address p,
+    .footer-ivent__address a{
+        font-size: 16px !important;
+    }
+    .footer-ivent__address--legal{
+        max-width: 240px;
+        margin: 0 auto;
+    }
+    .footer-ivent__address p{
+        margin-bottom: 20px;
+    }
+    .footer-ivent__address--box{
+        flex-direction: column-reverse;
+    }
+    .footer-ivent__address img{
+        width: 60px;
+    }
+}
+
 /* Accordeon  ===========================================*/
 
 .question .grad-btn{
@@ -2536,6 +2566,7 @@ color: var(--accent);
     font-size: 18px;
     font-weight: 600;
     line-height: 23,4px;
+    padding-right: 60px;
 }
 
 .ac .ac-panel .ac-text{
@@ -2569,5 +2600,33 @@ color: var(--accent);
     display: flex;
     align-items: center;
     justify-content: center;
+}
+@media (max-width: 640px) {
+    .ac .ac-trigger::after{
+        width: 30px;
+        height: 30px;
+    }
+    .ac .ac-trigger,
+    .ac .ac-trigger:focus{
+        font-size: 14px;
+    }
+}
+@media (max-width: 480px) {
+    .ac .ac-trigger::after{
+        width: 24px;
+        height: 24px;
+    }
+    .ac .ac-trigger,
+    .ac .ac-trigger:focus{
+        padding-right: 48px;
+        font-size: 12px;
+
+    }
+    .question .grad-btn {
+        width: 90%;
+        text-align: center;
+        font-size: 14px;
+        padding: 20px 40px;
+    }
 }
 
